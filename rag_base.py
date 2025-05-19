@@ -28,8 +28,8 @@ class BaseRAG(ABC):
         self.index = None
         
         # Configure LlamaIndex
-        Settings.llm = OpenAI(model="gpt-3.5-turbo")
-        Settings.embed_model = OpenAIEmbedding(model="text-embedding-ada-002")
+        Settings.llm = OpenAI(model="o4-mini")
+        Settings.embed_model = OpenAIEmbedding(model="text-embedding-3-small")
         
         # Load and index data
         self._load_data()
