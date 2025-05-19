@@ -66,6 +66,11 @@ To stop the running container:
 docker ps  # Find the container ID
 docker stop <container_id>
 ```
+### Running container from the Dockerhub
+
+```bash
+docker run -p 8501:8501 -e OPENAI_API_KEY=your_openai_api_key_here vals2711/bins_rag
+```
 
 ## Usage Examples
 
